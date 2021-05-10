@@ -1,10 +1,44 @@
 <!DOCTYPE html>
-<html lang="mn" dir="ltr">
+
+<html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="viewport" content="width=device-width, initial scale=1.0">
+    <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
     <title>Baltimore Ravens : Fan App</title>
   </head>
   <body>
+    <div id="navbar">
+      <a href="#home">Home</a>
+    </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
   </body>
 </html>
