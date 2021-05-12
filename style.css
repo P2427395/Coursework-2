@@ -36,7 +36,9 @@
   height: 5%;
 }
 
-
+.img {
+max-width: 100%;  
+}
 
 
 
@@ -154,3 +156,5 @@
 .sticky + .content {
   padding-top: 60px;
 }
+
+.body {}
