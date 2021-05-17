@@ -55,35 +55,33 @@ display: grid;
 
 .responsive2{
   width: 100%;
-  max-width: 500px;
   height: auto;
   padding-top: 5px;
-  display: block;
 }
 
 /*this is how I organised the roster page*/
 .column{
 background-color: #aaa;
 float: left;
-width: 25%;
+width: 50%;
 }
 
 .column3{
 background-color: white;
 float: left;
-width: 25%;
+width: 16.66%;
 }
 
 .column4{
 background-color: #aaa;
 float: left;
-width: 25%;
+width: 16.66%;
 }
 
 .column5{
 background-color: #white;
 float: left;
-width: 25%;
+width: 16.66%;
 }
 
 /* Clear floats after the columns */

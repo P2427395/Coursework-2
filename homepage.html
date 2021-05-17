@@ -8,18 +8,17 @@
   </head>
   <body>
     <div class="topnav" id="topnav">
-  <a href="file:///C:/Users/Admin/github/Coursework-2/homepage.html" class="active"><img class="image" src="img/logo.png" alt=""></a>
+  <a href="file:///C:/Users/Admin/github/Coursework-2/homepage.html" class="active"><img class="image" src="img/logo.png" alt="Baltimore Ravens logo"></a>
   <a href="file:///C:/Users/Admin/github/Coursework-2/news.html">News</a>
   <a href="file:///C:/Users/Admin/github/Coursework-2/roster.html">Roster</a>
   <a href="file:///C:/Users/Admin/github/Coursework-2/gallery.html">Gallery</a>
-  <a href="#contact">Contact</a>
-  <a href="#about">About</a>
+  <a href="file:///C:/Users/Admin/github/Coursework-2/about.html">About</a>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
   </a>
   </div>
 
-<img class="responsive2" src="img/lamar2.jpg" alt="">
+<img class="responsive2" src="img/lamar2.jpg" alt="Lamar Jackson">
 
 
 
@@ -35,20 +34,37 @@
 
 
 
-    <script>
-    /* all javascript is from W3schools*/
-window.onscroll = function() {myFunction()};
-
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
+<script type="text/javascript">
+/* all javascript is from W3schools*/
+  function myFunction() {
+    var x = document.getElementById("topnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
   }
-}
+  </script>
+
+<script type="text/javascript">
+/* all javascript is from W3schools*/
+  // When the user scrolls the page, execute myFunction
+  window.onscroll = function() {myFunction()};
+
+  // Get the navbar
+  var navbar = document.getElementById("topnav");
+
+  // Get the offset position of the navbar
+  var sticky = navbar.offsetTop;
+
+  // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
 </script>
   </body>
 </html>
