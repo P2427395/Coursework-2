@@ -1,7 +1,11 @@
+/*all css has been copied, from w3schools, and edited to fit my assignment8*/
+
+
 /* Style the navbar */
 #topnav {
+  float: left;
   overflow: hidden;
-  background-color: #24135F;
+  background-color: #000000;
 }
 
 /* Navbar links */
@@ -37,13 +41,75 @@
 }
 
 .img {
-max-width: 100%;  
+max-width: 100%;
+}
+
+.responsive{
+width: 100%;
+max-width: 1000px;
+height: auto;
+padding-top: 5px;
+}
+
+.responsive2{
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  padding-top: 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
+.column{
+background-color: #aaa;
+float: left;
+width: 20%;
+}
 
+.column2{
+background-color: white;
+float: left;
+width: 10%;
+}
 
+.column3{
+background-color: #aaa;
+float: left;
+width: 12.5%;
+}
 
+.column4{
+background-color: #white;
+float: left;
+width: 12.5%;
+}
+
+.column5{
+background-color: #aaa;
+float: left;
+width: 12.5%;
+}
+
+.column6{
+background-color: #white;
+float: left;
+width: 12.5%;
+}
+
+.column7{
+background-color: #aaa;
+float: left;
+width: 12.5%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 
 
