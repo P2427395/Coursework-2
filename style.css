@@ -1,4 +1,4 @@
-/*all css has been copied, from w3schools, and edited to fit my assignment8*/
+/*most of the css has been copied, from w3schools, and edited to fit my assignment8*/
 
 
 /* Style the navbar */
@@ -44,11 +44,13 @@
 max-width: 100%;
 }
 
+/*gallery images*/
 .responsive{
 width: 100%;
-max-width: 1000px;
+max-width: 500px;
 height: auto;
 padding-top: 5px;
+display: grid;
 }
 
 .responsive2{
@@ -57,51 +59,31 @@ padding-top: 5px;
   height: auto;
   padding-top: 5px;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
-
+/*this is how I organised the roster page*/
 .column{
 background-color: #aaa;
 float: left;
-width: 20%;
-}
-
-.column2{
-background-color: white;
-float: left;
-width: 10%;
+width: 25%;
 }
 
 .column3{
-background-color: #aaa;
+background-color: white;
 float: left;
-width: 12.5%;
+width: 25%;
 }
 
 .column4{
-background-color: #white;
+background-color: #aaa;
 float: left;
-width: 12.5%;
+width: 25%;
 }
 
 .column5{
-background-color: #aaa;
-float: left;
-width: 12.5%;
-}
-
-.column6{
 background-color: #white;
 float: left;
-width: 12.5%;
-}
-
-.column7{
-background-color: #aaa;
-float: left;
-width: 12.5%;
+width: 25%;
 }
 
 /* Clear floats after the columns */
@@ -111,7 +93,13 @@ width: 12.5%;
   clear: both;
 }
 
-
+.grid-responsive{
+display: grid;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  grid-template-columns: auto auto auto;
+  padding: 75px;
+}
 
 
 
@@ -123,8 +111,6 @@ width: 12.5%;
 
 
 /*responsive navbar*/
-
-
 /* Add a black background color to the top navigation */
 .topnav {
   background-color: #000000;
